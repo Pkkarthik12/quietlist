@@ -3,3 +3,7 @@ Add production app icons here before packaging:
 - icon.ico for Windows
 - icon.icns for macOS
 - 512x512 PNG for Linux and store assets
+
+Current repo asset:
+
+- icon.svg for QuietList branding and base conversions

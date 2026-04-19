@@ -7,7 +7,7 @@ function createWindow() {
     height: 880,
     minWidth: 980,
     minHeight: 700,
-    backgroundColor: "#f5efe4",
+    backgroundColor: "#f4f6f8",
     autoHideMenuBar: true,
     title: "QuietList",
     webPreferences: {

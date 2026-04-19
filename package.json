@@ -6,6 +6,10 @@
   "main": "src/main/main.js",
   "author": "LOQ",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pkkarthik12/quietlist.git"
+  },
   "scripts": {
     "start": "electron .",
     "dev": "electron .",
@@ -23,6 +27,9 @@
     "directories": {
       "buildResources": "build"
     },
+    "extraMetadata": {
+      "main": "src/main/main.js"
+    },
     "win": {
       "target": [
         "nsis"
@@ -37,12 +44,18 @@
       "artifactName": "${productName}-${version}.${ext}"
     },
     "linux": {
+      "icon": "build/icon.svg",
       "target": [
         "AppImage",
         "deb"
       ],
       "category": "Office",
       "artifactName": "${productName}-${version}.${ext}"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "Pkkarthik12",
+      "repo": "quietlist"
     }
   },
   "devDependencies": {
