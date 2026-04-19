@@ -1,6 +1,6 @@
 {
-  "name": "do-do-ist",
-  "productName": "Do Do Ist",
+  "name": "quietlist",
+  "productName": "QuietList",
   "version": "1.0.0",
   "description": "A calm personal todo list desktop app for everyone.",
   "main": "src/main/main.js",
@@ -13,8 +13,8 @@
     "dist": "electron-builder"
   },
   "build": {
-    "appId": "com.dodoist.app",
-    "productName": "Do Do Ist",
+    "appId": "com.quietlist.app",
+    "productName": "QuietList",
     "files": [
       "src/**/*",
       "package.json",

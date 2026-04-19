@@ -9,7 +9,7 @@ function createWindow() {
     minHeight: 700,
     backgroundColor: "#f5efe4",
     autoHideMenuBar: true,
-    title: "Do Do Ist",
+    title: "QuietList",
     webPreferences: {
       contextIsolation: true,
       nodeIntegration: false
