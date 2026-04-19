@@ -54,23 +54,7 @@ Targets configured in `package.json`:
 - macOS: `dmg`
 - Linux: `AppImage`, `deb`
 
-## Publish to GitHub
 
-Initialize git and create the first commit:
-
-```bash
-git init
-git add .
-git commit -m "Initial QuietList desktop app"
-```
-
-Add your GitHub remote and push:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/quietlist.git
-git branch -M main
-git push -u origin main
-```
 
 ## Notes
 
