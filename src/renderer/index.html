@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do Do Ist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-block">
+        <div class="brand-mark">DD</div>
+        <div>
+          <p class="eyebrow">Personal focus software</p>
+          <h1>Do Do Ist</h1>
+        </div>
+      </div>
+
+      <section class="profile-card">
+        <p class="eyebrow">Today</p>
+        <h2 id="hero-count">0 tasks left</h2>
+        <p class="muted">A gentle place to capture, finish, and clear your head.</p>
+      </section>
+
+      <section class="sidebar-panel">
+        <p class="eyebrow">Why people keep it open</p>
+        <ul class="benefit-list">
+          <li>Simple enough for anyone to use instantly</li>
+          <li>Fast local storage with no account required</li>
+          <li>Built for work, study, home, and personal goals</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="main-panel">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Everyone's personal list app</p>
+          <h2>Clean, calm, and ready for the next thing.</h2>
+        </div>
+        <div class="hero-stats">
+          <article>
+            <span class="stat-label">Tasks</span>
+            <strong id="total-count">0</strong>
+          </article>
+          <article>
+            <span class="stat-label">Done</span>
+            <strong id="completed-count">0</strong>
+          </article>
+          <article>
+            <span class="stat-label">Focus</span>
+            <strong id="focus-score">100%</strong>
+          </article>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <section class="composer-card">
+          <div class="card-heading">
+            <div>
+              <p class="eyebrow">Capture</p>
+              <h3>Add a new task</h3>
+            </div>
+            <span class="pill">Local-first</span>
+          </div>
+
+          <form id="task-form" class="task-form">
+            <label class="sr-only" for="task-input">Task name</label>
+            <input id="task-input" name="task" type="text" maxlength="100" placeholder="Finish proposal draft">
+            <button type="submit">Add task</button>
+          </form>
+        </section>
+
+        <section class="list-card">
+          <div class="card-heading">
+            <div>
+              <p class="eyebrow">Today list</p>
+              <h3>Your personal board</h3>
+            </div>
+            <div class="filters" id="filters">
+              <button type="button" class="filter active" data-filter="all">All</button>
+              <button type="button" class="filter" data-filter="active">Active</button>
+              <button type="button" class="filter" data-filter="completed">Done</button>
+            </div>
+          </div>
+
+          <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <p>No tasks here yet. Add one small thing and start there.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
