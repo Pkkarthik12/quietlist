@@ -2,7 +2,7 @@
   "name": "quietlist",
   "productName": "QuietList",
   "version": "1.0.0",
-  "description": "A calm personal todo list desktop app for everyone.",
+  "description": "QuietList is a calm personal todo list desktop app for everyone.",
   "main": "src/main/main.js",
   "author": "LOQ",
   "license": "MIT",

@@ -1,5 +1,7 @@
 Add production app icons here before packaging:
 
+QuietList platform icons:
+
 - icon.ico for Windows
 - icon.icns for macOS
 - 512x512 PNG for Linux and store assets

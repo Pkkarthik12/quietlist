@@ -130,7 +130,7 @@ function dueSoonCount() {
 
 function formatMessage(remaining, urgent) {
   if (remaining === 0) {
-    return "All clear for today.";
+    return "QuietList is clear for today.";
   }
 
   if (urgent > 0) {

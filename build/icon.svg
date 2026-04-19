@@ -1,4 +1,5 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>QuietList icon</title>
   <rect width="256" height="256" rx="64" fill="url(#bg)"/>
   <rect x="46" y="44" width="164" height="168" rx="36" fill="white" fill-opacity="0.92"/>
   <path d="M82 101C82 95.4772 86.4772 91 92 91H164C169.523 91 174 95.4772 174 101C174 106.523 169.523 111 164 111H92C86.4772 111 82 106.523 82 101Z" fill="#D9E6FF"/>

@@ -1,4 +1,4 @@
-name: Validate Desktop App
+name: QuietList Validate Desktop App
 
 on:
   push:

@@ -1,6 +1,6 @@
 # QuietList
 
-QuietList is a clean personal todo list desktop app designed to feel friendly, fast, and calm. It is built as a cross-platform Electron app so it can be packaged for Windows, macOS, and Linux from one repository.
+QuietList is a clean personal todo list desktop app designed to feel friendly, fast, and calm. It is built as a cross-platform Electron app so it can be packaged for Windows, macOS, and Linux from one repository, with one consistent QuietList brand across the app and release flow.
 
 ## What it includes
 

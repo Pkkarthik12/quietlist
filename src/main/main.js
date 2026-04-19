@@ -2,6 +2,7 @@ const { app, BrowserWindow } = require("electron");
 const path = require("path");
 
 function createWindow() {
+  // QuietList opens into a single calm desktop workspace.
   const mainWindow = new BrowserWindow({
     width: 1360,
     height: 880,

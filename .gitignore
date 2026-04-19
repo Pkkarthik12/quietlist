@@ -1,3 +1,4 @@
+# QuietList local build outputs
 node_modules/
 dist/
 release/
