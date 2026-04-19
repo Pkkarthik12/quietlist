@@ -89,7 +89,6 @@ h3 {
 
 .topbar,
 .hero-card,
-.quote-card,
 .composer-card,
 .list-card {
   border: 1px solid var(--line);
@@ -160,19 +159,6 @@ h3 {
 .composer-card,
 .list-card {
   padding: 20px;
-}
-
-.quote-card {
-  padding: 18px 20px;
-  margin-bottom: 14px;
-  background: linear-gradient(180deg, #fcfdff 0%, #f7f9fd 100%);
-}
-
-.quote-text {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--ink);
 }
 
 .composer-card {

@@ -10,31 +10,6 @@ const totalCount = document.querySelector("#total-count");
 const completedCount = document.querySelector("#completed-count");
 const focusScore = document.querySelector("#focus-score");
 const todayNote = document.querySelector("#today-note");
-const quoteText = document.querySelector("#quote-text");
-
-const quotes = {
-  empty: [
-    "Start small. Clarity grows from one action.",
-    "A gentle beginning is still a beginning.",
-    "Make the first task easy, then keep going."
-  ],
-  active: [
-    "Small steps still move you forward.",
-    "Progress feels lighter when the next step is clear.",
-    "You do not need a perfect day, only a real one.",
-    "One finished task can change the mood of the day."
-  ],
-  almostDone: [
-    "You are closer than you think.",
-    "One more step and the day opens up.",
-    "Keep going. The list is getting quieter."
-  ],
-  complete: [
-    "Done is a peaceful feeling.",
-    "You made space for tomorrow.",
-    "A finished list is a kind gift to yourself."
-  ]
-};
 
 const defaultTasks = [
   { id: crypto.randomUUID(), title: "Plan today in three small steps", completed: false, createdAt: Date.now() - 3 },
@@ -79,21 +54,6 @@ function formatMeta(task) {
   return task.completed ? "Finished" : "Open";
 }
 
-function pickQuote(remaining, total) {
-  let group = quotes.active;
-
-  if (total === 0) {
-    group = quotes.empty;
-  } else if (remaining === 0) {
-    group = quotes.complete;
-  } else if (remaining === 1) {
-    group = quotes.almostDone;
-  }
-
-  const index = Math.min(group.length - 1, total % group.length);
-  return group[index];
-}
-
 function createTaskItem(task) {
   const item = document.createElement("li");
   item.className = `task-item${task.completed ? " completed" : ""}`;
@@ -133,14 +93,12 @@ function renderTasks() {
       : remaining === 1
         ? "One task left. Nice and simple."
         : "A clean list makes the day feel lighter.";
-  const quote = pickQuote(remaining, total);
 
   heroCount.textContent = `${remaining} task${remaining === 1 ? "" : "s"} left`;
   totalCount.textContent = String(total);
   completedCount.textContent = String(completed);
   focusScore.textContent = String(remaining);
   todayNote.textContent = message;
-  quoteText.textContent = quote;
   emptyState.hidden = visibleTasks.length !== 0;
 
   filters.querySelectorAll(".filter").forEach((button) => {
