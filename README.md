@@ -58,20 +58,6 @@ Targets configured in `package.json`:
 - macOS: `dmg`
 - Linux: `AppImage`, `deb`
 
-## Release from GitHub
-
-The repository includes two workflows:
-
-- `Validate Desktop App` for push and pull request checks
-- `Release Desktop App` for tagged builds and GitHub Releases
-
-Create a version tag to publish release artifacts:
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
-
 
 ## Notes
 
